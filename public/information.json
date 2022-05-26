@@ -1,0 +1,120 @@
+{
+    "home": {
+        "title": "François Michel",
+        "text": "Welcome to my hompage"
+    },
+    "about": {
+        "title": "About",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium. Arcu ac tortor dignissim convallis aenean et tortor at risus. Consequat id porta nibh venenatis cras sed felis eget. Neque volutpat ac tincidunt vitae. Eget mauris pharetra et ultrices neque ornare. Augue mauris augue neque gravida. In nisl nisi scelerisque eu ultrices. Elit duis tristique sollicitudin nibh sit. Consequat nisl vel pretium lectus quam id leo in vitae. Ut sem nulla pharetra diam sit amet nisl suscipit. Nunc sed id semper risus. Amet commodo nulla facilisi nullam vehicula ipsum a. Amet luctus venenatis lectus magna fringilla urna porttitor. Dictum sit amet justo donec enim diam. Accumsan in nisl nisi scelerisque eu. Nunc non blandit massa enim nec dui nunc. In vitae turpis massa sed elementum tempus egestas. Elementum tempus egestas sed sed. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Pretium vulputate sapien nec sagittis aliquam. Neque vitae tempus quam pellentesque nec nam aliquam sem et. Donec massa sapien faucibus et molestie ac. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Libero id faucibus nisl tincidunt eget nullam non nisi est. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Mi bibendum neque egestas congue quisque. Mauris cursus mattis molestie a iaculis. Tellus at urna condimentum mattis pellentesque. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit."
+    },
+    "projects": {
+        "title": "Projects",
+        "entries": [
+            {
+                "title": "Proof-of-personhood System",
+                "link": "https://github.com/dedis/popstellar",
+                "description": "Semester Project - EPFL - Grade : 6/6",
+                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students. Managed the back-end team composed of 3 students during the project."
+            },
+            {
+                "title": "Proof-of-personhood System",
+                "link": "https://github.com/dedis/popstellar",
+                "description": "Semester Project - EPFL - Grade : 6/6",
+                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students. Managed the back-end team composed of 3 students during the project."
+            },
+            {
+                "title": "Proof-of-personhood System",
+                "link": "https://github.com/dedis/popstellar",
+                "description": "Semester Project - EPFL - Grade : 6/6",
+                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students. Managed the back-end team composed of 3 students during the project."
+            },
+            {
+                "title": "Proof-of-personhood System",
+                "link": "https://github.com/dedis/popstellar",
+                "description": "Semester Project - EPFL - Grade : 6/6",
+                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students. Managed the back-end team composed of 3 students during the project."
+            },
+            {
+                "title": "Proof-of-personhood System",
+                "link": "https://github.com/dedis/popstellar",
+                "description": "Semester Project - EPFL - Grade : 6/6",
+                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students. Managed the back-end team composed of 3 students during the project."
+            },
+            {
+                "title": "Proof-of-personhood System",
+                "link": "https://github.com/dedis/popstellar",
+                "description": "Semester Project - EPFL - Grade : 6/6",
+                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students. Managed the back-end team composed of 3 students during the project."
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "techincal": [
+            {
+                "name": "Java",
+                "level": 0.9
+            },
+            {
+                "name": "Go",
+                "level": 0.9
+            },
+            {
+                "name": "Python",
+                "level": 0.75
+            },
+            {
+                "name": "Java",
+                "level": 0.55
+            }
+        ],
+        "languages": [
+            {
+                "name": "French",
+                "level": 1
+            },
+            {
+                "name": "English",
+                "level": 0.95
+            },
+            {
+                "name": "German",
+                "level": 0.3
+            },
+            {
+                "name": "Japanese",
+                "level": 0.2
+            }
+        ]
+    },
+    "resume": {
+        "title": "Resume",
+        "link": "/resume.pdf"
+    },
+    "footer": {
+        "title": "Get in touch",
+        "social": {
+            "title": "Social medias",
+            "websites": [
+                {
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/in/francois-michel/"
+                },
+                {
+                    "name": "github",
+                    "link": "https://github.com/flmichel/"
+                },
+                {
+                    "name": "facebook",
+                    "link": "https://www.facebook.com/francois.michel.3154"
+                }
+            ]
+        },
+        "information": {
+            "title": "Have any question?",
+            "phone": "+41 77 485 89 65",
+            "address": "Chemin des Vignes 7, 1124 Gollion, Switerland",
+            "email": "francois.l.michel@gmail.com"
+        }
+    }
+}
