@@ -1,7 +1,7 @@
 {
     "home": {
         "title": "François Michel",
-        "text": "Welcome to my hompage"
+        "text": "Security engineer intern at  <a href='https://secutix.com' style='color: inherit'>SECUTIX</a>"
     },
     "about": {
         "title": "About",
@@ -44,7 +44,7 @@
                 "title": "Proof-of-personhood System",
                 "link": "https://github.com/dedis/popstellar",
                 "description": "Semester Project - EPFL - Grade : 6/6",
-                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students. Managed the back-end team composed of 3 students during the project."
+                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at "
             }
         ]
     },
@@ -53,7 +53,7 @@
         "techincal": [
             {
                 "name": "Java",
-                "level": 0.9
+                "level": 0.1
             },
             {
                 "name": "Go",

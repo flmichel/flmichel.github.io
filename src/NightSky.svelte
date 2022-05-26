@@ -10,9 +10,11 @@
     class Star {
         x: number;
         y: number;
+        r: number;
         constructor(xi: number, yi: number, spacing: number) {
             this.x = xi + randomInt(spacing);
             this.y = yi + randomInt(spacing);
+            this.r = Math.random();
         }
 
         evolve() {
@@ -37,15 +39,13 @@
             let grd = ctx.createLinearGradient(0, 0, 0, 2000);
             grd.addColorStop(0, backgroundColor);
             grd.addColorStop(1, secondColor);
-            ctx.fillStyle = grd; //backgroundColor;
+            ctx.fillStyle = grd;
             ctx.fillRect(0, 0, width, height);
             stars.forEach(function (star) {
-                const x = star.x;
-                const y = star.y;
                 const r = 1;
                 ctx.beginPath();
                 ctx.fillStyle = "rgb(255, 255, 255)";
-                ctx.arc(x, y, r, 0, Math.PI * 2);
+                ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
                 ctx.fill();
                 star.evolve();
             });

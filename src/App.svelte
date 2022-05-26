@@ -6,7 +6,7 @@
 	import Competence from "./Competence.svelte";
 	import IconCircle from "./IconCircle.svelte";
 	import Contact from "./Contact.svelte";
-	import NightSky from "../NightSky.svelte";
+	import NightSky from "./NightSky.svelte";
 	import i from "../public/information.json";
 
 	// define if the this is a mobile or a computer
@@ -21,7 +21,10 @@
 		});
 		window.history.replaceState({}, "", event.detail.ref);
 	}
-	let progress = 0.75;
+
+	function openResume() {
+		window.open("/resume.pdf");
+	}
 </script>
 
 <svelte:window bind:innerWidth={x} />
@@ -42,14 +45,19 @@
 		<Section segment="#skills" on:click={jumpToSection}
 			>{i.skills.title}</Section
 		>
-		<Section segment="#resume">{i.resume.title}</Section>
+
+		<Section segment="#resume" on:click={openResume}>
+			{i.resume.title + " "}
+			<!-- svelte-ignore component-name-lowercase -->
+			<i class="fa fa-file-pdf-o" />
+		</Section>
 	</div>
 </Topbar>
 
 <div id="home">
 	<div class="text">
 		<h1>{i.home.title}</h1>
-		<p class="typewriter">{i.home.text}</p>
+		<p class="typewriter">{@html i.home.text}</p>
 	</div>
 	<NightSky />
 </div>
@@ -178,7 +186,7 @@
 			grid-template-columns: repeat(2, 1fr);
 		}
 	</style>
-{:else if x > 800}
+{:else}
 	<style>
 		.cards {
 			grid-template-columns: repeat(1, 1fr);
@@ -189,6 +197,10 @@
 <style>
 	:global(body) {
 		padding: 0px;
+	}
+
+	a {
+		color: inherit;
 	}
 
 	section {
@@ -279,6 +291,7 @@
 		grid-gap: 1rem;
 	}
 
+	/* Typewriter animation */
 	.typewriter {
 		color: white;
 		font-size: 25px;
@@ -288,7 +301,6 @@
 		animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
 	}
 
-	/* The typing effect */
 	@keyframes typing {
 		from {
 			width: 0;
@@ -298,7 +310,6 @@
 		}
 	}
 
-	/* The typewriter cursor effect */
 	@keyframes blink-caret {
 		from,
 		to {
