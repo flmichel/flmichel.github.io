@@ -1,8 +1,10 @@
 <script lang="ts">
     import Hamburger from "./Hamburger.svelte";
     import { fly } from "svelte/transition";
-    import { mobile, openModal } from "./stores";
+    import { mobile, openModal } from "../stores";
+    import { onMount } from "svelte";
 
+    export let color: string;
     let x: number;
     let open: boolean;
     let onClick = (): void => {
@@ -20,7 +22,7 @@
     $: openModal.set(open);
 </script>
 
-<nav>
+<nav style="background-color: {color}">
     <div class="bar">
         <slot class="home" name="left" />
         {#if mobileValue}
@@ -47,13 +49,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(221, 247, 255, 0.89);
     }
 
     .right {
         float: right;
-    }
-    .vertical {
-        background-color: rgba(221, 247, 255, 0.89);
     }
 </style>

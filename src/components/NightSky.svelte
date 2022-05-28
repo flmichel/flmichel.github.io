@@ -1,11 +1,13 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-    let canvas;
+    export let width: number;
+    export let height: number;
+
+    let canvas: HTMLCanvasElement;
     const backgroundColor = "#030318";
     const secondColor = " #3f034f";
-    let width: number, height: number;
-    let stars: Star[];
+    let stars: Star[] = [];
 
     class Star {
         x: number;
@@ -31,7 +33,7 @@
         const ctx = canvas.getContext("2d");
         let frame = requestAnimationFrame(loop);
 
-        stars = createStars(width, height, 50);
+        /*stars = createStars(width, height, 50);*/
 
         function loop() {
             frame = requestAnimationFrame(loop);
@@ -56,15 +58,17 @@
         };
     });
 
-    function createStars(w: number, h: number, spacing: number) {
-        let s: Star[] = [];
+    $: createStars(width, height, 50);
 
-        for (let x = 0; x < w; x += spacing) {
-            for (let y = 0; y < h; y += spacing) {
-                s.push(new Star(x, y, spacing));
+    function createStars(w: number, h: number, spacing: number) {
+        if (w && h) {
+            stars = [];
+            for (let x = 0; x < w; x += spacing) {
+                for (let y = 0; y < h; y += spacing) {
+                    stars.push(new Star(x, y, spacing));
+                }
             }
         }
-        return s;
     }
 
     function randomInt(max: number) {
@@ -72,12 +76,4 @@
     }
 </script>
 
-<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
-
 <canvas bind:this={canvas} {width} {height} />
-
-<style>
-    canvas {
-        background-color: #666;
-    }
-</style>

@@ -1,12 +1,11 @@
 <script lang="ts">
 	import Section from "./Section.svelte";
 	import Topbar from "./Topbar.svelte";
-	import { mobile } from "./stores";
+	import { mobile } from "../stores";
 	import Card from "./Card.svelte";
 	import Competence from "./Competence.svelte";
 
-	export let link: string;
-	export let name: string;
+	export let icon: string;
 </script>
 
 <svelte:head>
@@ -17,7 +16,10 @@
 </svelte:head>
 
 <!-- svelte-ignore a11y-missing-content -->
-<a href={link} class={"fa fa-" + name} />
+<span class="contact">
+	<i class={"fa fa-" + icon} />
+	<slot />
+</span>
 
 <style>
 	.fa {

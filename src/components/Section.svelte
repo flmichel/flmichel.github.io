@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { mobile, openModal } from "./stores";
+    import { mobile, openModal } from "../stores";
     import { createEventDispatcher } from "svelte";
 
     const dispatch = createEventDispatcher();
