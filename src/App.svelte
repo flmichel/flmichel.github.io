@@ -207,6 +207,7 @@
 <style>
 	:global(body) {
 		padding: 0px;
+		margin: 0px;
 	}
 
 	a {
@@ -287,6 +288,7 @@
 
 	#footer .text {
 		position: absolute;
+		padding-top: 30px;
 		padding-bottom: 50px;
 	}
 
