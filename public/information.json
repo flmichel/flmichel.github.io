@@ -5,7 +5,7 @@
     },
     "about": {
         "title": "About me",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium. Arcu ac tortor dignissim convallis aenean et tortor at risus. Consequat id porta nibh venenatis cras sed felis eget. Neque volutpat ac tincidunt vitae. Eget mauris pharetra et ultrices neque ornare. Augue mauris augue neque gravida. In nisl nisi scelerisque eu ultrices. Elit duis tristique sollicitudin nibh sit. Consequat nisl vel pretium lectus quam id leo in vitae. Ut sem nulla pharetra diam sit amet nisl suscipit. Nunc sed id semper risus. Amet commodo nulla facilisi nullam vehicula ipsum a. Amet luctus venenatis lectus magna fringilla urna porttitor. Dictum sit amet justo donec enim diam. Accumsan in nisl nisi scelerisque eu. Nunc non blandit massa enim nec dui nunc. In vitae turpis massa sed elementum tempus egestas. Elementum tempus egestas sed sed. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Pretium vulputate sapien nec sagittis aliquam. Neque vitae tempus quam pellentesque nec nam aliquam sem et. Donec massa sapien faucibus et molestie ac. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Libero id faucibus nisl tincidunt eget nullam non nisi est. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Mi bibendum neque egestas congue quisque. Mauris cursus mattis molestie a iaculis. Tellus at urna condimentum mattis pellentesque. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit."
+        "text": "My name is François Michel. I am a master student in a joint master program between ETH Zürich and Swiss Federal Institute of Technology Lausanne (EPFL) in Cybersecurity. I did my bachelor in EPFL, including one year exchange in University of Washington. I am currently working at <a href='https://secutix.com' style='color: inherit'>Secutix</a> where I am doing my master thesis. I see myself as a hard worker and fast learner.  I am currently looking for a software engineer position where I can grow and learn from experienced team members in a top tech company."
     },
     "projects": {
         "title": "Projects",
@@ -21,12 +21,6 @@
                 "link": "https://github.com/flmichel/sentiment-classification",
                 "description": "Course Project - EPFL - Grade: 5.5/6",
                 "contribution": "Built a python Machine Learning classiﬁer performing sentiment analysis on a set of tweets. Achieved 88.2% accuracy, using a pre-trained BERT model combined with multiple pre-processing techniques. Other models were evaluated such as SVM and MLP."
-            },
-            {
-                "title": "Proof-of-personhood System",
-                "link": "https://github.com/dedis/popstellar",
-                "description": "Semester Project - EPFL - Grade: 6/6",
-                "contribution": "Prototyped and implemented a highly robust proof-of-presence group communication and voting app for mobile devices at the Decentralized Distributed Systems Laboratory with 9 other students."
             },
             {
                 "title": "Forest Firefighters",
@@ -45,6 +39,12 @@
                 "link": "https://github.com/flmichel/gameboj",
                 "description": "Course Project - EPFL - Grade: 5.75/6",
                 "contribution": "Develept a Nintendo Game Boy emulator in Java, during the EPFL course “Practice of object-oriented programming”."
+            },
+            {
+                "title": "Personal Website",
+                "link": "https://github.com/flmichel/flmichel.github.io",
+                "description": "Personal project",
+                "contribution": "Built a simple personal website using the web framework Svelte"
             }
         ]
     },

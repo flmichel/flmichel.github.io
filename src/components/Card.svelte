@@ -71,6 +71,7 @@
         color: #000000;
         text-align: center;
         transition: all 0.2s;
+        white-space: nowrap;
     }
     .button:hover {
         color: #000000;

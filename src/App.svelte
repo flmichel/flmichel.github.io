@@ -13,7 +13,11 @@
 	let x: number;
 	let y: number;
 	let mobileValue: boolean;
-	$: mobileValue = x < 800;
+	$: {
+		y = Math.min(document.documentElement.clientHeight, y);
+		x = Math.min(document.documentElement.clientWidth, x);
+		mobileValue = x < 800;
+	}
 	$: mobile.set(mobileValue);
 
 	function jumpToSection(event: any) {
@@ -26,8 +30,21 @@
 	function openResume() {
 		window.open("/resume.pdf");
 	}
-
+	function getDimension() {
+		x = Math.max(
+			document.documentElement.clientWidth,
+			window.innerWidth || 0
+		);
+		y = Math.max(
+			document.documentElement.clientHeight,
+			window.innerHeight || 0
+		);
+	}
 	let footerHeight: number;
+
+	$: {
+		console.log(x, y);
+	}
 </script>
 
 <svelte:window bind:innerWidth={x} bind:innerHeight={y} />
@@ -70,7 +87,7 @@
 <section id="about">
 	<h2 class="section-title">{i.about.title}</h2>
 	<img src="profile.png" alt="profile" style="width:200px" />
-	<p>{i.about.text}</p>
+	<p>{@html i.about.text}</p>
 </section>
 
 <section id="projects">
