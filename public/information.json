@@ -11,6 +11,18 @@
         "title": "Projects",
         "entries": [
             {
+                "title": "Tank Game",
+                "link": "https://github.com/flmichel/tank-game",
+                "description": "Personal Project",
+                "contribution": "Build an arcade-style tank multiplayer game in Rust where the game controller is a mobile phone connected to the game via WebRTC."
+            },
+            {
+                "title": "Implementation of Blind Signatures for an E-Voting System",
+                "link": "https://github.com/directdemocracy-vote/app",
+                "description": "Association DirectDemocracy",
+                "contribution": "Implement RSA Blind Signatures (IETF RFC 9474) in JavaScript to ensure vote privacy in a decentralized e-voting protocol."
+            },
+            {
                 "title": "Proof-of-personhood System",
                 "link": "https://github.com/dedis/popstellar",
                 "description": "Semester Project - EPFL - Grade: 6/6",
@@ -53,7 +65,7 @@
         "techincal": [
             {
                 "name": "Java",
-                "level": "88%"
+                "level": "95%"
             },
             {
                 "name": "Go",
@@ -79,11 +91,11 @@
             },
             {
                 "name": "German",
-                "level": "25%"
+                "level": "20%"
             },
             {
                 "name": "Japanese",
-                "level": "20%"
+                "level": "15%"
             }
         ]
     },
